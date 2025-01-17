@@ -1,0 +1,38 @@
+### GET request to example server
+GET http://localhost:8000/api/students
+
+###
+
+### POST request to example server
+POST http://localhost:8000/api/students
+Content-Type: application/json
+
+{
+  "nim": "231524046",
+  "name": "John jelang",
+  "major": "Computer Science",
+  "study_program": "D4",
+  "year": "2023",
+  "email": "johnlang@gmail.com",
+  "status": "active",
+  "password": "zeagtluke"
+}
+
+###
+POST http://localhost:8000/auth/register
+Content-Type: application/json
+
+{
+  "email": "",
+  "password": "",
+
+}
+
+###
+POST http://localhost:8000/auth/login
+Content-Type: application/json
+
+{
+  "email": "",
+  "password": ""
+}
